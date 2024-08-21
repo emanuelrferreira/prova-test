@@ -14,3 +14,20 @@ allQuestions.forEach((question) => {
     }
   });
 });
+
+// Seleciona os elementos
+const showImage = document.querySelector('.show-image');
+const imageModal = document.getElementById('imageModal');
+
+// Mostra a imagem e aplica o fundo desfocado
+showImage.addEventListener('click', () => {
+    imageModal.style.display = 'flex';
+});
+
+// Esconde a imagem ao clicar fora dela
+imageModal.addEventListener('click', (event) => {
+    // Verifica se o clique foi fora da imagem
+    if (event.target === imageModal) {
+        imageModal.style.display = 'none';
+    }
+});

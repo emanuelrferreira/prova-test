@@ -70,25 +70,43 @@
                     <p class="q-indent">a - Dado o fluxograma abaixo, escreva um código de programa em Python correspondente que faça amesma coisa.</p>
                     <p class="q-indent"></pclass>b - Descreva de forma geral o que faz esse algoritmo.</p>
                 </div>
+                <div class="btn-wrapper">
+                    <div class="btn show-image">Veja o Fluxograma</div>
+                </div>
+                <div class="image-modal" id="imageModal">
+                    <img src="fluxograma-q3.jpg" alt="Fluxograma">
+                </div>
                 <div class="answertop">
                     <h3>Respostas</h3>
                     <svg width="16px" height="57px" viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="#000000" stroke="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M903.232 256l56.768 50.432L512 768 64 306.432 120.768 256 512 659.072z" fill="#000000"></path></g></svg>
                 </div>
                 <div class="answer">
-                    <p>Os Operadores Relacionais criam uma relação de comparação entre valores, variáveis e/ou expressões resultando em um valor lógico. Eles são: > (maior que), < (menor que), >= (maior ou igual a), <= (menor ou igual a), == (igual a) e != (diferente de).</p>
+                    <p>a -</p>
                     <div class="snippet-code">
                         <div class="code-block">
                             <p class="code">
-                                    a = 2 <br>
-                                    b = 3 <br>
-                                    c = 5<br><br>
-                                    c >= a + b -> TRUE
+                                let x = parseInt(prompt("Digite um número: ")) <br>
+                                let i = 1 <br>
+                                let count3 = 0 <br>
+                                let count5 = 5 <br><br>
+                                while (i<=x) {<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;if (i % 3 == 0) {<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;count3++<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;if (i % 5 == 0) {<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;count5++<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;i++<br>
+                                }<br><br>
+                                let total = count3 + count5<br>
+                                console.log(total)
                             </p>
                         </div>
+                        <p>b - O algoritmo irá contar quantos números entre 1 e x são divisíveis por 3 e por 5, depois irá somar as contagens exibindo o total no console.</p>
                     </div>
                 </div>
             </div>
-    </div>
+        </div>
     </section>
     <script src="script.js"></script>
 </body>
