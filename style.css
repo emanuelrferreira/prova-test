@@ -39,6 +39,14 @@ section {
   font-size: 14px;
 }
 
+.question {
+  padding: 2px;
+}
+
+.q-indent {
+  text-indent: 30px;
+}
+
 .answertop {
   display: flex;
   cursor: pointer;
@@ -52,10 +60,6 @@ section {
 .answer {
   display: none;
   margin-left: 20px;
-}
-
-hr {
-  border: none;
-  height: 2px;
-  background-color: #682a2c79;
+  padding: 10px;
+  border: 1px dashed #682a2cb2;
 }
