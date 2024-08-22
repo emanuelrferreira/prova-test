@@ -29,8 +29,8 @@
                                 print("Os valores são:" a, b, c)
                             </p>
                         </div>
-                        <p>O que exatamente vai ser impresso na tela do computador ao executar este programa?</p>
                     </div>
+                    <p>O que exatamente vai ser impresso na tela do computador ao executar este programa?</p>
                 </div>
                 <div class="answertop">
                     <h3>Resposta</h3>
@@ -50,7 +50,7 @@
                     <svg width="16px" height="57px" viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="#000000" stroke="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M903.232 256l56.768 50.432L512 768 64 306.432 120.768 256 512 659.072z" fill="#000000"></path></g></svg>
                 </div>
                 <div class="answer">
-                    <p>Os Operadores Relacionais criam uma relação de comparação entre valores, variáveis e/ou expressões resultando em um valor lógico. Eles são: > (maior que), < (menor que), >= (maior ou igual a), <= (menor ou igual a), == (igual a) e != (diferente de).</p>
+                    <p>Os Operadores Relacionais criam uma relação de comparação entre valores, variáveis e/ou expressões resultando em um valor lógico. Eles são: &gt; (maior que), &lt; (menor que), &gt;= (maior ou igual a), &lt;= (menor ou igual a), == (igual a) e != (diferente de).</p>
                     <div class="snippet-code">
                         <div class="code-block">
                             <p class="code">
@@ -70,6 +70,7 @@
                     <p class="q-indent">a - Dado o fluxograma abaixo, escreva um código de programa em Python correspondente que faça amesma coisa.</p>
                     <p class="q-indent"></pclass>b - Descreva de forma geral o que faz esse algoritmo.</p>
                 </div>
+                <!-- Janela Modal -->
                 <div class="btn-wrapper">
                     <div class="btn show-image">Veja o Fluxograma</div>
                 </div>
@@ -89,7 +90,7 @@
                                 let i = 1 <br>
                                 let count3 = 0 <br>
                                 let count5 = 5 <br><br>
-                                while (i<=x) {<br>
+                                while (i&lt;=x) {<br>
                                     &nbsp;&nbsp;&nbsp;&nbsp;if (i % 3 == 0) {<br>
                                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;count3++<br>
                                     &nbsp;&nbsp;&nbsp;&nbsp;}<br>
@@ -106,6 +107,69 @@
                     </div>
                 </div>
             </div>
+            <!-- Questão 4 -->
+            <div class="collapse-item">
+                <div class="question">
+                    <p>4 - O código a seguir deveria ler 5 valores do teclado e fazer a soma e a multiplicação dos 5 números. Após isso, o código verifica se ambas a soma e a multiplicação dos números são ímpares, caso as duas sejam, ele imprime os dois valores na tela. Porém, <strong>faltam alguns operadores no código. Complete as lacunas em branco</strong> com os operadores faltantes que achar necessário.</p>
+                    <div class="snippet-code">
+                        <div class="code-block">
+                            <p class="code">
+                                    soma = 0<br>
+                                    produto _____ 1<br>
+                                    count _____ 0<br><br>
+                                    while count _____ 5:<br>
+                                    &nbsp;&nbsp;&nbsp;num = int(input("Digite um número: "))<br>
+                                    &nbsp;&nbsp;&nbsp;soma _____ soma + num<br>
+                                    &nbsp;&nbsp;&nbsp;produto _____ num<br>
+                                    &nbsp;&nbsp;&nbsp;count _____ 1<br><br>
+                                    if (soma _____ 2 == 1) _____ (produto ____ 2 ____ 1):<br>
+                                    &nbsp;&nbsp;&nbsp;print("A soma é ímpar:", soma)<br>
+                                    &nbsp;&nbsp;&nbsp;print("O produto é ímpar:", produto)
+                            </p>
+                        </div>
+                </div>
+                <div class="answertop">
+                    <h3>Resposta</h3>
+                    <svg width="16px" height="57px" viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="#000000" stroke="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M903.232 256l56.768 50.432L512 768 64 306.432 120.768 256 512 659.072z" fill="#000000"></path></g></svg>
+                </div>
+                <div class="answer">
+                    <div class="snippet-code">
+                        <div class="code-block">
+                            <p class="code">
+                                    soma = 0<br>
+                                    produto <em>=</em> 1<br>
+                                    count <em>=</em> 0<br><br>
+                                    while count <em>&lt;</em> 5:<br>
+                                    &nbsp;&nbsp;&nbsp;num = int(input("Digite um número: "))<br>
+                                    &nbsp;&nbsp;&nbsp;soma <em>=</em> soma + num<br>
+                                    &nbsp;&nbsp;&nbsp;produto <em>*=</em> num<br>
+                                    &nbsp;&nbsp;&nbsp;count <em>+=</em> 1<br><br>
+                                    if (soma <em>%</em> 2 == 1) <em>and</em> (produto <em>%</em> 2 <em>==</em> 1):<br>
+                                    &nbsp;&nbsp;&nbsp;print("A soma é ímpar:", soma)<br>
+                                    &nbsp;&nbsp;&nbsp;print("O produto é ímpar:", produto)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <!-- Questão 5 -->
+            <div class="collapse-item">
+                <div class="question">
+                    <p>5 - Escreva um programa em Python que leia do usuário uma temperatura em graus Fahrenheit e imprima se água irá ferver ou se a água não irá ferver naquela temperatura. (Lembrando que a água ferve a 100&#8451; e a fórmula de conversão está listada a seguir)</p>
+                </div>
+                <!-- <div class="image-modal2">
+                    <img src="formula-conversao.jpg" alt="Fluxograma">
+                </div> -->
+                <div class="answertop">
+                    <h3>Resposta</h3>
+                    <svg width="16px" height="57px" viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="#000000" stroke="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M903.232 256l56.768 50.432L512 768 64 306.432 120.768 256 512 659.072z" fill="#000000"></path></g></svg>
+                </div>
+                <div class="answer">
+                    <p></p>
+                        </div>
+                    </div>
+                </div>
+            </div>                         
         </div>
     </section>
     <script src="script.js"></script>
