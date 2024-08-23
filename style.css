@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 body {
   background-color: #682a2c;
   font: normal 16px Arial;
@@ -104,4 +106,24 @@ section {
 
 em {
   color: green;
+}
+
+/* img questao 5 */
+
+.formula-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.expressao-logica {
+  display: flex;
+  justify-content: center;
+  font-family: "Courier Prime", monospace;
+  font-weight: bold;
+}
+
+.expressao-logica-result {
+  font-family: "Courier Prime", monospace;
+  font-weight: bold;
+  text-indent: 20px;
 }
